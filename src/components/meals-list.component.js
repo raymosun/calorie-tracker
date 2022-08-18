@@ -50,7 +50,7 @@ export default class MealsList extends Component {
         return (
             <div>
             <h3>Logged Meals</h3>
-            <table className="table">
+            <table className="table" dark-mode="true">
               <thead className="thead-light">
                 <tr>
                   <th>Username</th>
@@ -68,3 +68,5 @@ export default class MealsList extends Component {
         )
     }
 }
+
+MealsList.contextType = DarkContext;
